@@ -28,13 +28,13 @@ const change = 500 - sumPrice;
 document.getElementById("change").innerHTML = change;
 
 const averagePrice = sumPrice / 3;
-document.getElementById("averagePrice").innerHTML = averagePrice.toFixed(2);
+document.getElementById("averagePrice").innerHTML = Number(averagePrice.toFixed(2));
 
 const discount = Math.floor(Math.random()*100);
 document.getElementById("discount").innerHTML = discount;
 
 const price = Number(sumPrice - (sumPrice/100 * discount));
-document.getElementById("price").innerHTML = price.toFixed(2);
+document.getElementById("price").innerHTML = Number(price.toFixed(2));
 
 const income = price - (sumPrice / 2);
 document.getElementById("income").innerHTML = income;
