@@ -1,12 +1,12 @@
 let N = parseInt(prompt('Введіть ціле початкове значення: '));
 
-while(!Number.isInteger(N)) {
-	N = Number(prompt('Введіть ЦІЛЕ число без букв'));
+while(N == null || !Number.isInteger(N)) {
+	N = parseInt(prompt('Введіть ЦІЛЕ число без букв'));
 }
 
 let M = parseInt(prompt('Введіть ціле кінцеве значення: '));
-while(!Number.isInteger(M)) {
-	M = Number(prompt('Введіть ЦІЛЕ число без букв'));
+while(M == null || !Number.isInteger(M)) {
+	M = parseInt(prompt('Введіть ЦІЛЕ число без букв'));
 }
 
 let boolean = confirm('Чи потрібно пропускати парні числа?');
