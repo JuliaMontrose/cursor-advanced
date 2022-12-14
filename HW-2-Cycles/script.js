@@ -19,6 +19,13 @@ if (boolean == true) {
            sum += i
 		 }
 		}
+} else {
+	for(let i = N; i <= M; i++ ){
+		console.log(i)
+			 if (i % 2 == 0) {
+				  sum += i
+			 }
+			}
 }
 
 document.getElementById("result").innerHTML = sum;
