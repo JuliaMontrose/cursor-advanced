@@ -10,7 +10,7 @@ while(!Number.isInteger(M)) {
 }
 
 let boolean = confirm('Чи потрібно пропускати парні числа?');
-let sum = 0
+let sum = 0;
 
 if (boolean == true) {
 	for(let i = N; i <= M; i++ ){
